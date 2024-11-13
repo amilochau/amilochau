@@ -1,9 +1,8 @@
-<h1 align="center" style="display: flex; justify-content: center; align-items: center; gap: 16px;">
-  <a href="https://milochau.com" target="_blank">
+<div align="center">
+  <a align="center" href="https://milochau.com" target="_blank">
     <img alt="milochau logo" width="100" src="./assets/logo.png">
   </a>
-  Antoine Milochau
-</h1>
+</div>
 
 ## About me, Antoine Milochau
 
@@ -36,13 +35,16 @@ Here are some business solutions that have been implemented and deployed:
 | [contact.milochau.com](https://contact.milochau.com) | Contact me if you want to learn more on my projects |
 | [cv.milochau.com](https://cv.milochau.com) | My own Curriculum Vitae |
 
-Technical modules are used behind the scenes, to avoid repetition:
+<details>
+<summary>Technical modules are used behind the scenes, to avoid repetition.</summary>
 
 - `emails`: internal technical service to send compliant templatized emails; including unsubscribe list and bounce/complain feedbacks - based mostly on AWS SES, AWS DynamoDB, AWS SNS
 - `identity`: identity provider to manage users and groups - based mostly on AWS Cognito
 - `permissions`: permissions service to manage Attribute-Based Access Control in business solutions - based mostly on AWS DynamoDB, AWS Cognito
 - `trackings`: audit service to track business-related events in business solutions - based mostly on AWS DynamoDB
 - `management`: global configuration for AWS Accounts
+
+</details>
 
 ## Future topics
 
