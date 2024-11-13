@@ -3,23 +3,13 @@
     <img alt="milochau logo" width="100" src="./assets/logo.png">
   </a>
 </p>
-<p align="center">
-  <a href="https://github.com/amilochau/amilochau/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/amilochau/amilochau" alt="License">
-  </a>
-</p>
 <h1 align="center">
   Antoine Milochau
 </h1>
-<h2 align="center">
-  @amilochau
-</h1>
-
-Welcome my repositories!
 
 ## About me, Antoine Milochau
 
-I'm a Cloud Architect, working on Azure and AWS solutions. I'm particularly using .NET for almost 15 years, and TypeScript for 10 years, then using more and more Cloud-native solutions - focused on serverless, easy-to-use by design.
+I'm a Cloud Architect, working on Azure and AWS solutions. I'm particularly using .NET for almost 15 years, and TypeScript for 10 years, then using more and more Cloud-native solutions - focused on serverless, easy-to-use by design. Contact me on LinkedIn to start the discussion!
 
 ## About amilochau
 
