@@ -1,9 +1,3 @@
-<div align="center">
-  <a align="center" href="https://milochau.com" target="_blank">
-    <img alt="milochau logo" width="100" src="./assets/logo.png">
-  </a>
-</div>
-
 ## About me, Antoine Milochau
 
 I'm a Cloud Architect, working on Azure and AWS solutions. I'm particularly using .NET for almost 15 years, and TypeScript for 10 years, then using more and more Cloud-native solutions - focused on serverless, easy-to-use by design. Contact me on LinkedIn to start the discussion!
