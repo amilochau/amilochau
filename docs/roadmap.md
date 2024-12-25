@@ -6,9 +6,40 @@ This page presents the public roadmap for the `amilochau` projects, and the `mil
 
 ---
 
+## Current quarter
+
+### 2025 Q1
+
+| State | Title | Tags | Comment |
+| ----- | ----- | ---- | ------- |
+
+---
+
+## Future quarters
+
+These roadmap items are expected to be delivered soon. The dates indicated here are informative, and could change in the future.
+
+### 2025 Q2+
+
+| Title | Tags | Comment |
+| ----- | ---- | ------- |
+| Setup alerts on monitoring | `infra`, `monitoring` | Our resources are now monitored with different metrics and logs. We should configure alerts to be notified when thresholds on KPIs are met. |
+| Use reusable GitHub workflows | `devops` | Instead of re-defining workflows in each repository, we should use reusable GitHub workflows, using our centralized GitHub Actions. |
+| Use local databases | `infra`, `devops` | AWS serverless services are charged on consuption. To avoid overbilling during tests, we should use local databases. |
+
+---
+
+## Past quarters
+
+These roadmap items have been delivered, as they are now implemented.
+
+---
+
+### 2024
+
 ```mermaid
 gantt
-  title Roadmap
+  title Roadmap 2024
   dateFormat YYYY-MM-DD
   axisFormat %d/%m
 
@@ -23,49 +54,47 @@ gantt
   section Business
 ```
 
-## Current quarter
+#### 2024 Q4
 
-### 2024 Q1
+| State | Title | Tags | Comment |
+| ----- | ----- | ---- | ------- |
+| ✔️ | Migrate to .NET 9 | `csharp`, `core` | New versions for Microsoft-stack frameworks are regularly released. We should migrate our libraries and applications, and adapt our templates and workflows. |
+| ✔️ | Simplify .NET project files | `csharp` | Project and solution files used by .NET are used extensively, creating complexity. We should simplify our base templates to make our repositories easier to understand. |
+
+#### 2024 Q3
+
+| State | Title | Tags | Comment |
+| ----- | ----- | ---- | ------- |
+| ✔️ | Centralize permissions | `infra`, `microservices` | Permissions are critical in multi-tenant applications. We should create a new dedicated service, called every time a user wants to access personal data. |
+| ✔️ | Centralize trackings | `infra`, `microservices` | Accesses to personal data must be auditable. We should create a new dedicated service to store all audit logs, sent every time a user accesses personal data. |
+| ✔️ | Introduce internal packages | `devops` | Internal packages help services communicate together, with company-scoped SDKs. We should adapt our supply chain to support internal packages.; |
+
+#### 2024 Q2
+
+| State | Title | Tags | Comment |
+| ----- | ----- | ---- | ------- |
+| ✔️ | Implement code generators | `csharp`, `core` | Attributes are an easy way to entich code. To avoid performance issues, we should create code generators for AWS DynamoDB attributes, to generate SDK-based code on build. |
+
+#### 2024 Q1
 
 | State | Title | Tags | Comment |
 | ----- | ----- | ---- | ------- |
 | ✔️ | Architect AWS with landing zones | `infra`, `devops` | We now have to support multiple organizations, with their own infrastructure. We should rework our AWS accounts to architect with landing zones. |
 | ✔️ | Configure AWS SSO | `infra`, `security` | Using AWS root accounts is a bad practices, and not the easiest way to work with multiple AWS accounts. We should setup SSO with AWS, enforce it with least privilege, and make it work with our rewritten .NET AWS SDK. |
-| 🔜 | Use GitHub repository templates | `devops` | We should define repository templates within GitHub, to help create repositories without Terraform files tracking. |
+| ✔️ | Use GitHub repository templates | `devops` | We should define repository templates within GitHub, to help create repositories without Terraform files tracking. |
+| ✔️ | Use events with AWS SNS | `infra` | Reacting to events is critical in distributed applications. We should leverage AWS SNS topics to create resilient asynchronous processes. |
 
----
-
-## Future quarters
-
-These roadmap items are expected to be delivered soon. The dates indicated here are informative, and could change in the future.
-
-### 2024 Q2+
-
-| Title | Tags | Comment |
-| ----- | ---- | ------- |
-| Setup alerts on monitoring | `infra`, `monitoring` | Our resources are now monitored with different metrics and logs. We should configure alerts to be notified when thresholds on KPIs are met. |
-| Use reusable GitHub workflows | `devops` | Instead of re-defining workflows in each repository, we should use reusable GitHub workflows, using our centralized GitHub Actions. |
-| Migrate to .NET 9 | `csharp`, `core` | New versions for Microsoft-stack frameworks are regularly released. We should migrate our libraries and applications, and adapt our templates and workflows. |
-| Use local databases | `infra`, `devops` | AWS serverless services are charged on consuption. To avoid overbilling during tests, we should use local databases. |
-
----
-
-## Past quarters
-
-These roadmap items have been delivered, as they are now implemented.
-
----
 
 ### 2023
 
 ```mermaid
 gantt
-  title Roadmap
+  title Roadmap 2023
   dateFormat YYYY-MM-DD
   axisFormat %d/%m
 
   section Frameworks
-  .NET native AOT   : done,       aot,         2023-01-01,               2023-01-15
+  .NET Native AOT   : done,       aot,         2023-01-01,               2023-01-15
   .NET AWS SDK      : done,       aws,         2023-10-03,               2023-10-27
   .NET 8            : done,       net8,        2023-11-14,               2023-11-30
   JS AWS SDK v6     : done,       aws-js,      2023-11-14,               2023-11-16
@@ -97,7 +126,7 @@ gantt
 | ✔️ | Push notifications | `infra`, `web` | Push notifications can be used as a friendly way to communicate updates to users; we should use them, with a Lambda-based implementation using .NET Native AOT. |
 | ✔️ | Migrate to .NET 8 | `csharp`, `core` | New versions for Microsoft-stack frameworks are regularly released. We should migrate our libraries and applications, and adapt our templates and workflows. |
 | ✔️ | Landing pages | `web` | External users coming to our websites can't easily understand what they can do with them. We should add landing pages to explain the main available features. |
-| Migrate to AWS Amplify SDK v6 | `web`, `core` | A new major version of AWS Amplify SDK, used for authentication with Cognito, can be used to improve performances. |
+| ✔️ | Migrate to AWS Amplify SDK v6 | `web`, `core` | A new major version of AWS Amplify SDK, used for authentication with Cognito, can be used to improve performances. |
 | ✔️ | Rewrite leaflet | `web`, `maps` | Leaflet is a great library for maps, but contains outdated code, without tree-shaking and many bugs. We should write a new maps library, inspired by leaflet. |
 
 #### 2023 Q3
@@ -124,7 +153,7 @@ gantt
 | State | Title | Tags | Comment |
 | ----- | ----- | ---- | ------- |
 | ✔️ | Setup AWS Cognito | `infra`, `auth` | AWS Cognito can be used to authenticate our future Lambda-based services. We should setup it, and integrate it with our Front-End libraries. |
-| ✔️ | Use native AOT for .NET | `infra`, `csharp` | New deployment models help to reduce cold start duration. We should build our Lambda-based applications as native AOT code, so we improve performances and decrease cost. |
+| ✔️ | Use Native AOT for .NET | `infra`, `csharp` | New deployment models help to reduce cold start duration. We should build our Lambda-based applications as Native AOT code, so we improve performances and decrease cost. |
 | ✔️ | Use AWS for emails | `infra`, `microservices` | AWS proposes integrated workflows to send emails, with SES v2. We should define a Lambda-based process and migrate from Azure. |
 | ✔️ | Use AWS for maps | `infra`, `microservices` | AWS proposes efficient serverless resources, with Lambda functions, API Gateway and CloudFront. We should rework the maps microservice as a Lambda-based application, and migrate from Azure. |
 | ✔️ | Separate operations from *milochau.com* | `infra`, `microservices`, `business` | Operations are a specific business domain, today grouped in the *milochau.com* application. We should separate them, and deploy the new `operations` application as a serverless, Lambda-based application. |
@@ -135,7 +164,7 @@ gantt
 
 ```mermaid
 gantt
-  title Roadmap
+  title Roadmap 2022
   dateFormat YYYY-MM-DD
   axisFormat %d/%m
 
