@@ -1,6 +1,6 @@
 ## About me, Antoine Milochau
 
-I'm a Cloud Architect, working on Azure and AWS solutions. I'm particularly using .NET for almost 15 years, and TypeScript for 10 years, then using more and more Cloud-native solutions - focused on serverless, easy-to-use by design. Contact me on LinkedIn to start the discussion!
+I'm a Cloud & Platform Architect, working on Azure and AWS solutions. I'm particularly using .NET for almost 15 years, and TypeScript for 10 years, then using more and more Cloud-native solutions - focused on serverless, easy-to-use, secured by design. Contact me on LinkedIn to start the discussion!
 
 The `amilochau` account contains projects and repositories with Microsoft & AWS technologies. My first motivation has been to test, with real-life scenarios, multiple languages, frameworks and Cloud resources proposed by Microsoft and AWS. From these investigations, multiple results have been produced.
 
@@ -20,23 +20,23 @@ Here are the most important packages, part of my projects:
 
 ## Business solutions
 
-Here are some business solutions that have been implemented and deployed:
+Here are some business solutions that have been implemented and deployed, as part of the `milochau.com` website:
 
 |   |   |
 |---|---|
-| [maps.milochau.com](https://maps.milochau.com) | Create your own maps with custom makers, lines and layer groups |
-| [operations.milochau.com](https://operations.milochau.com) | Create your operations lists, to share validated expenses with your friends or family |
-| [contact.milochau.com](https://contact.milochau.com) | Contact me if you want to learn more on my projects |
-| [cv.milochau.com](https://cv.milochau.com) | My own Curriculum Vitae |
+| `maps` | Create your own maps with custom makers, lines and layer groups |
+| `operations` | Create your operations lists, to share validated expenses with your friends or family |
+| `chats` | Contact me if you want to learn more on my projects |
+| `cv` | My own Curriculum Vitae - see [here](https://milochau.com/cv) |
 
 <details>
-<summary>Technical modules are used behind the scenes, to avoid repetition.</summary>
+<summary>Technical providers are used behind the scenes.</summary>
 
-- `emails`: internal technical service to send compliant templatized emails; including unsubscribe list and bounce/complain feedbacks - based mostly on AWS SES, AWS DynamoDB, AWS SNS
-- `identity`: identity provider to manage users and groups - based mostly on AWS Cognito
-- `permissions`: permissions service to manage Attribute-Based Access Control in business solutions - based mostly on AWS DynamoDB, AWS Cognito
-- `trackings`: audit service to track business-related events in business solutions - based mostly on AWS DynamoDB
-- `management`: global configuration for AWS Accounts
+- Auth0 is used as Identity Provider for business solutions, with social connections
+- Azure is used for hosting business solutions, with Azure Container Apps, Azure Function Apps, Azure Cosmos DB
+- AWS is used for the domain name management, with Amazon Route 53
+- GCP is used for maps search
+- OpenStreetMap and Thunderforest are used for maps display
 
 </details>
 
